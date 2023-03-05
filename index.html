@@ -1,0 +1,165 @@
+<script>
+  var sites = [
+    'https://cdn1.vectorstock.com/i/1000x1000/53/75/pixel-dinosaur-image-for-game-assets-vector-38165375.jpg',
+    'https://cdn5.vectorstock.com/i/1000x1000/97/39/8-bit-pixel-dinosaur-vector-37889739.jpg',
+    'https://img.freepik.com/premium-vector/red-trex-dinosaur-with-pixel-art-style_475147-464.jpg',
+    'https://i.pinimg.com/736x/0d/45/08/0d4508a6ad02611af720d39a8b8a8d83.jpg',
+    'https://e7.pngegg.com/pngimages/653/665/png-clipart-line-cute-dinosaur-area-art-drawing.png',
+    'https://image.spreadshirtmedia.com/image-server/v1/products/T1596A1PA4137PT10X11Y11D1043797896W4098H4098/views/1,width=378,height=378,appearanceId=1,backgroundColor=F2F2F2/pixel-art-cute-dinosaur.jpg',
+    'https://media.istockphoto.com/id/807235520/vector/vector-pixel-art-cartoon.jpg?s=612x612&w=0&k=20&c=CTsiIAg_DpaDOH85ePOwzQXlB_6cc_E5gXTF3HVq8sU=',
+    'https://i.pinimg.com/736x/f3/8c/97/f38c9746e957cd534621dc3e92297c39--kawaii-cross-stitch-friendship-bracelet-patterns.jpg',
+    'https://cdn.dribbble.com/users/2031410/screenshots/4032914/nuevodinotru4_still.gif?compress=1&resize=400x300',
+  ];
+
+  function randomSite() {
+    const i = parseInt(Math.random() * sites.length);
+    location.href = sites[i];
+  }
+</script>
+
+<style>
+  body {
+
+    background: url("https://img.itch.zone/aW1hZ2UvMTEwMDUxMi82MzUyNzM0LmdpZg==/original/dBfFzH.gif");
+    background-repeat: repeat-x;
+    background-size: 150px;
+    background-color: pink;
+  }
+
+  .dino {
+    position: fixed;
+    right: 50%;
+    width: 200px;
+    height: 200px;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+  .dino div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #4bac75;
+    color: #94d377;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: "Courier New", Courier, monospace;
+    opacity: 0;
+    visibility: hidden;
+
+  }
+
+  .dino:hover {
+    cursor: pointer;
+  }
+
+  .dino:hover div {
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .textbox {
+    position: fixed;
+    top: 20%;
+    left: 0%;
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    background: white;
+    color: pink;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: grey;
+    box-shadow: 0px 5px 10px rgba(166, 38, 79, 0.7);
+    font-size: 20px;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    font-family: "Courier New", Courier, monospace;
+
+  }
+
+  .dropbtn {
+    position: fixed;
+    right: 10%;
+    bottom: 75%;
+    background-color: white;
+    color: pink;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3;
+    box-shadow: 0px 5px 10px rgba(166, 38, 79, 0.7);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: fixed;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    right: 5%;
+    bottom: 45%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    border-radius: 10px;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: 100;
+  }
+</style>
+
+<body>
+
+  <div class="dino">
+    <img src="https://img.itch.zone/aW1hZ2UvMTEwMDUxMi82MzUyNzM0LmdpZg==/original/dBfFzH.gif" alt="pixel dinosaur running">
+    <div>hello user</div>
+  </div>
+  <div class="textbox">
+    <div><b><input type="type" style="width: 400px;" placeholder="enter dino name here" </b>
+        <a class="submit" href="#" onclick="randomSite()"><input type="submit" value="generate dinosaur" </a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">dino freinds</button>
+    <div class="dropdown-content">
+      <a href="https://i.gifer.com/be5.gif" target="_blank"><img src="https://i.gifer.com/be5.gif" alt="running orange dinosaur" width="60"></a>
+      <a href="https://thumbs.gfycat.com/DescriptiveShorttermGnatcatcher-max-1mb.gif" target="_blank"><img src="https://thumbs.gfycat.com/DescriptiveShorttermGnatcatcher-max-1mb.gif" alt="green wiggling dinosaur" width="60"></a>
+      <a href="https://66.media.tumblr.com/3850180b33e307f7a2a86d0eee2c21b5/tumblr_mmrawrF8vM1rfjowdo1_500.gif" target="_blank"><img src="https://66.media.tumblr.com/3850180b33e307f7a2a86d0eee2c21b5/tumblr_mmrawrF8vM1rfjowdo1_500.gif" alt="pink blinking dinosaur" width="60"></a>
+    </div>
+  </div>
+</body>
